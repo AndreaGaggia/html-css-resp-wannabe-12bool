@@ -42,3 +42,41 @@ img {
 .clear {
   clear: both;
 }
+
+
+@media screen and (max-width: 420px) {
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  img, p {
+    margin-bottom: 20px;
+  }
+
+  p {
+    padding: 0 10px;
+  }
+
+  .container.grey {
+    background: none;
+  }
+
+  #why p {
+    height: 135px;
+  }
+
+}
