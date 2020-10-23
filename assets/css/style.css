@@ -1,5 +1,4 @@
 .row {
-  width: 992px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -24,13 +23,6 @@
   padding: 30px
 }
 
-/* COMMON */
-.row::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 .container.grey {
   background-color: #f9f9f9;
 }
@@ -43,40 +35,14 @@ img {
   clear: both;
 }
 
-
-@media screen and (max-width: 420px) {
-
-}
-
-@media screen and (min-width: 420px) and (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-size: 1.5rem;
-  }
-
-  h1 {
-    margin-bottom: 40px;
-  }
-
-  img, p {
-    margin-bottom: 20px;
-  }
-
+@media all and (max-width: 1200px) {
   p {
     padding: 0 10px;
   }
-
-  .container.grey {
-    background: none;
+  .row * {
+    margin-bottom: 20px;
   }
-
-  #why p {
-    height: 135px;
+  hr {
+    display: none;
   }
-
 }
